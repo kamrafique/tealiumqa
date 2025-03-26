@@ -96,7 +96,7 @@ window.expectedTealiumObjects = [
   "event": "TealiumLink"
 },
 {
-  "eventAction": "Open Outbound Fare Details",
+  "eventAction": "Select Outbound",
   "eventCategory": "Train Selection",
   "eventLabel": "Eurostar Plus",
   "noChanges": 0,
@@ -107,9 +107,9 @@ window.expectedTealiumObjects = [
   "sOutboundConnectionOperator": null,
   "sTrainNumberOutbound": /^\d{4}$/,
   "sTrainTarriffOutbound": /^[A-Z0-9]{11}$/,
-  "basket_value": 0,
+  "basket_value": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "sTrainSaleTagsOutbound": "",
-  "basket_value_inpoints": 0,
+  "basket_value_inpoints": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceAdultOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceChildOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceYouthOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
@@ -117,6 +117,51 @@ window.expectedTealiumObjects = [
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
+	{
+  "eventAction": "Open Inbound Fare Details",
+  "eventCategory": "Train Selection",
+  "eventLabel": "Eurostar Plus",
+  "noChanges": 0,
+  "sClassOutbound": "Eurostar Plus",
+  "sOutboundTime": /^\d{2}:\d{2}$/,
+  "sOutboundArrivalTime": /^\d{2}:\d{2}$/,
+  "sOutboundConnectionCode": null,
+  "sOutboundConnectionOperator": null,
+  "sTrainNumberOutbound": /^\d{4}$/,
+  "sTrainTarriffOutbound": /^[A-Z0-9]{11}$/,
+  "basket_value": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "sTrainSaleTagsOutbound": "",
+  "basket_value_inpoints": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceAdultOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceChildOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceYouthOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceSeniorOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+	{
+  "eventAction": "Select Inbound",
+  "eventCategory": "Train Selection",
+  "eventLabel": "Eurostar Plus",
+  "noChanges": 0,
+  "sClassInbound": "Eurostar Plus",
+  "sInboundTime": /^\d{2}:\d{2}$/,
+  "sInboundArrivalTime": /^\d{2}:\d{2}$/",
+  "sInboundConnectionCode": null,
+  "sInboundConnectionOperator": null,
+  "sTrainNumberInbound": /^\d{4}$/,
+  "sTrainTarriffInbound": /^[A-Z0-9]{11}$/,
+  "basket_value": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "sTrainSaleTagsInbound": "upgrade - 5",
+  "basket_value_inpoints": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceAdultInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceChildInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceYouthInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceSeniorInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "sTrainTypeInbound": "ESTAR_PUB_PLUS",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+}
 {
 eventAction: "Login",
 currency: /^[A-Z]{3}$/,
@@ -292,7 +337,7 @@ event: "TealiumLink"
             eventName: "InteractionEvent",
             eventCategory: "Checkout Interaction",
             eventAction: "Payment Method Selection",
-            paymentDetails: "SavedCard"
+            paymentDetails: /^(Saved)?Card$/
         },
         {
             event: "TealiumLink",
