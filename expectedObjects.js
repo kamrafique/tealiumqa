@@ -8,6 +8,22 @@ window.expectedTealiumObjects = [
   "eventName": "NavigationEvent_v4",
   "event": "TealiumLink"
 },
+	{
+  "eventAction": "Field Start",
+  "eventLabel": "T:From",
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+	{
+  "eventAction": "Field Completion",
+  "eventLabel": /^T:From_\d{7}$/,
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
 {
   "eventAction": "Field Start",
   "eventLabel": "T:To",
@@ -36,6 +52,68 @@ window.expectedTealiumObjects = [
   "eventLabel": "T:Calendar|Outbound",
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+{
+  "eventAction": "Field Completion",
+  "eventLabel": "T:Calendar|Outbound",
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+	{
+  "eventAction": "Field Start",
+  "eventLabel": "T:Calendar|Inbound",
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+	{
+  "eventAction": "Field Completion",
+  "eventLabel": "T:Calendar|Inbound",
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+{
+  "eventAction": "Field Start",
+  "eventLabel": "T:Passenger",
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+{
+  "eventAction": "Field Completion",
+  "eventLabel": "T:Passenger",
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+{
+  "eventAction": "Open Outbound Fare Details",
+  "eventCategory": "Train Selection",
+  "eventLabel": "Eurostar Plus",
+  "noChanges": 0,
+  "sClassOutbound": "Eurostar Plus",
+  "sOutboundTime": /^\d{2}:\d{2}$/,
+  "sOutboundArrivalTime": /^\d{2}:\d{2}$/,
+  "sOutboundConnectionCode": null,
+  "sOutboundConnectionOperator": null,
+  "sTrainNumberOutbound": /^\d{4}$/,
+  "sTrainTarriffOutbound": /^[A-Z0-9]{11}$/,
+  "basket_value": 0,
+  "sTrainSaleTagsOutbound": "",
+  "basket_value_inpoints": 0,
+  "priceAdultOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceChildOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceYouthOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/4,
+  "priceSeniorOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
