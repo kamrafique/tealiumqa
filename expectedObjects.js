@@ -1,18 +1,33 @@
 // expectedObjects.js
 window.expectedTealiumObjects = [
 {
-        eventAction: "Login",
-        currency: /^[A-Z]{3}$/,
-        funnel_name: "Train",
-        page_name: "Login",
-        page_category: "Checkout",
-        ld_version: "design-system",
-        eventCategory: "Login or Register",
-        eventLabel: /^.{1,20}$/,
-        formName: /^checkout$/,
-        eventName: "InteractionEvent",
-        event: "TealiumLink"
-    },
+  "eventAction": "Field Start",
+  "eventLabel": "T:To",
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},{
+  "eventAction": "Field Completion",
+  "eventLabel": /^"T:To_d{7}"$/,
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+{
+eventAction: "Login",
+currency: /^[A-Z]{3}$/,
+funnel_name: "Train",
+page_name: "Login",
+page_category: "Checkout",
+ld_version: "design-system",
+eventCategory: "Login or Register",
+eventLabel: /^.{1,20}$/,
+formName: /^checkout$/,
+eventName: "InteractionEvent",
+event: "TealiumLink"
+},
         {
   event: "TealiumLink",
   eventName: "InteractionEvent",
