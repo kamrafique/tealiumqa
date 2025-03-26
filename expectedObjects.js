@@ -165,7 +165,7 @@ window.expectedTealiumObjects = [
 {
   "eventAction": "Outbound",
   "eventCategory": "Date Picker",
-  "eventLabel": /^(+|-):(Next|Previous)$/,
+  "eventLabel": /^(\+|\-)\d{1,20}\:(Next|Previous)$/,
   "sDateOutbound": /^\d{4}-\d{2}-\d{2}$/,
   "basket_value": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "basket_value_inpoints": /^(0|[1-9][0-9]{0,3}|10000)$/,
