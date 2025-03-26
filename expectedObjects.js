@@ -1,6 +1,14 @@
 // expectedObjects.js
 window.expectedTealiumObjects = [
 {
+  "eventAction": "OnClick",
+  "eventCategory": "HeaderLink",
+  "eventLabel": "TopMenu_Logo",
+  "destinationUrl": "https://staging.eurostar.com/uk-en",
+  "eventName": "NavigationEvent_v4",
+  "event": "TealiumLink"
+},
+{
   "eventAction": "Field Start",
   "eventLabel": "T:To",
   "eventCategory": "Booking Magnet",
@@ -10,6 +18,14 @@ window.expectedTealiumObjects = [
 },{
   "eventAction": "Field Completion",
   "eventLabel": /^"T:To_d{7}"$/,
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+{
+  "eventAction": "Click",
+  "eventLabel": "T:Search",
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
