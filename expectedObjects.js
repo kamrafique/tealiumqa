@@ -112,7 +112,7 @@ window.expectedTealiumObjects = [
   "basket_value_inpoints": 0,
   "priceAdultOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceChildOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
-  "priceYouthOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/4,
+  "priceYouthOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceSeniorOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
