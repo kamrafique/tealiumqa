@@ -32,6 +32,14 @@ window.expectedTealiumObjects = [
   "event": "TealiumLink"
 },
 {
+  "eventAction": "Field Start",
+  "eventLabel": "T:Calendar|Outbound",
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+{
 eventAction: "Login",
 currency: /^[A-Z]{3}$/,
 funnel_name: "Train",
