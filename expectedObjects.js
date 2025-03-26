@@ -146,7 +146,7 @@ window.expectedTealiumObjects = [
   "noChanges": 0,
   "sClassInbound": "Eurostar Plus",
   "sInboundTime": /^\d{2}:\d{2}$/,
-  "sInboundArrivalTime": /^\d{2}:\d{2}$/",
+  "sInboundArrivalTime": /^\d{2}:\d{2}$/,
   "sInboundConnectionCode": null,
   "sInboundConnectionOperator": null,
   "sTrainNumberInbound": /^\d{4}$/,
