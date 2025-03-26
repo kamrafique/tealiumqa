@@ -161,7 +161,7 @@ window.expectedTealiumObjects = [
   "sTrainTypeInbound": "ESTAR_PUB_PLUS",
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
-}
+},
 {
 eventAction: "Login",
 currency: /^[A-Z]{3}$/,
