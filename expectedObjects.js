@@ -22,6 +22,19 @@ window.expectedTealiumObjects = [
   "event": "TealiumLink"
 },
 {
+  "eventCategory": "Internal Promotion",
+  "eventAction": "Impression",
+  "eventNonInteraction": "true",
+  "eventLabel": "HeroCarousel_01",
+  "promotion_id": ["Hero Carousel"],
+  "promotion_name": /^\["(.*)"\]$/,
+  "promotion_creative": /^\["(.*)"\]$/,
+  "promotion_position": /^\["\d{2}_\d{2}"]$/,
+  "page_element_cta": /^(.*)$/,
+  "eventName": "ImpressionEvent",
+  "event": "TealiumLink"
+},
+{
   "eventAction": "Field Start",
   "eventLabel": "T:From",
   "eventCategory": "Booking Magnet",
@@ -198,7 +211,7 @@ formName: /^checkout$/,
 eventName: "InteractionEvent",
 event: "TealiumLink"
 },
-        {
+{
   event: "TealiumLink",
   eventName: "InteractionEvent",
   eventCategory: "Passenger Details",
