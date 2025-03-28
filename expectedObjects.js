@@ -8,7 +8,20 @@ window.expectedTealiumObjects = [
   "eventName": "NavigationEvent_vx",
   "event": "TealiumLink"
 },
-	{
+{
+  "eventCategory": "Internal Promotion",
+  "eventAction": "Impression",
+  "eventNonInteraction": "true",
+  "eventLabel": "PromoRow_02",
+  "promotion_id": ["Content Card", "Content Card", "Content Card"],
+  "promotion_name": ["Brussels from £39*", "Lille from £39*", "Disneyland® Paris holidays"],
+  "promotion_creative": ["Grand Place, Brussels, sunset", "Lille, France, street scene on a sunny day", "Family at DIsneyland Paris with Mickey Mouse ears on"],
+  "promotion_position": ["02_01", "02_02", "02_03"],
+  "page_element_cta": "Book now |Book now|Book now",
+  "eventName": "ImpressionEvent",
+  "event": "TealiumLink"
+},
+{
   "eventAction": "Field Start",
   "eventLabel": "T:From",
   "eventCategory": "Booking Magnet",
