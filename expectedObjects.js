@@ -199,6 +199,21 @@ window.expectedTealiumObjects = [
   "event": "TealiumLink"
 },
 {
+  "eventAction": "Hotel Selection",
+  "eventCategory": "Product tile",
+  "hHotelDetails": /^["(.*)|(.*)(.*)"])$/,
+  "hotelId": /^["(.*)"]$/,
+  "hotelName": /^["(.*)"]$/,
+  "hHotelPackagePromotion": /^[(.*)]$/,
+  "hHotelPackageSavings": /^[(.*)]$/,
+  "hHotelPriceAllPassengers": /^[(.*)]$/,
+  "hHotelReviewCount": /^["(.*)"]$/,
+  "hHotelReviewScore": /^["(.*)"]$/,
+  "hHotelStarRating": /^["(.*)"]$/,
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+{
 eventAction: "Login",
 currency: /^[A-Z]{3}$/,
 funnel_name: "Train",
