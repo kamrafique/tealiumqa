@@ -201,7 +201,7 @@ window.expectedTealiumObjects = [
 {
   "eventAction": "Hotel Selection",
   "eventCategory": "Product tile",
-  "hHotelDetails": /^["(.*)|(.*)(.*)"])$/,
+  "hHotelDetails": /^["(.*)|(.*)(.*)"]$/,
   "hotelId": /^["(.*)"]$/,
   "hotelName": /^["(.*)"]$/,
   "hHotelPackagePromotion": /^[(.*)]$/,
