@@ -160,9 +160,9 @@ window.expectedTealiumLinkObjects = [
   "event": "TealiumLink"
 },
 	{
-  "eventAction": /^(Open|Close) (Out|In)bound Fare Details$/,
+  "eventAction": "Open Outbound Fare Details",
   "eventCategory": "Train Selection",
-  "eventLabel": /^(Eurostar Plus|Eurostar Premier)$/,
+  "eventLabel": /^Eurostar (Plus|Premier)$/,
   "noChanges": 0,
   "sClassOutbound": /^(Eurostar Plus|Eurostar Premier)$/,
   "sOutboundTime": /^\d{2}:\d{2}$/,
