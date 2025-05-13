@@ -1,4 +1,5 @@
-
+// expectedObjects.js
+window.expectedTealiumObjects = [
 {
   "event": "TealiumView",
   "currency": "GBP",
@@ -1527,3 +1528,4 @@
   ],
   "page_name": "SearchResults"
 }
+];
