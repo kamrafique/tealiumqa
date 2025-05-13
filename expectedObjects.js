@@ -162,9 +162,9 @@ window.expectedTealiumLinkObjects = [
 	{
   "eventAction": "Open Outbound Fare Details",
   "eventCategory": "Train Selection",
-  "eventLabel": /^Eurostar (Plus|Premier)$/,
+  "eventLabel": /^Eurostar (Standard|Plus|Premier)$/,
   "noChanges": 0,
-  "sClassOutbound": /^(Eurostar Plus|Eurostar Premier)$/,
+  "sClassOutbound": /^Eurostar (Standard|Plus|Premier)$/,
   "sOutboundTime": /^\d{2}:\d{2}$/,
   "sOutboundArrivalTime": /^\d{2}:\d{2}$/,
   "sOutboundConnectionCode": null,
