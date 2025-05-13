@@ -70,6 +70,6 @@ window.expectedTealiumViewObjects = [
     product_train_fare_type: [/^(ES_ER|ER_SN|null)?$/],
     product_total_journey_length: [/^\d+$/],
     product_train_journey_length: [/^\d+$/],
-    page_name: /^SearchResults\/(Outbound|Inbound)$/
+    page_name: /^SearchResults(\/Inbound)?$/
   }
 ];
