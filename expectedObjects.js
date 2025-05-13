@@ -1,5 +1,5 @@
 // expectedObjects.js
-window.expectedTealiumObjects = [
+window.expectedTealiumLinkObjects = [
 {
   "eventAction": "OnClick",
   "eventCategory": "HeaderLink",
