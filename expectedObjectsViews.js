@@ -1,5 +1,5 @@
 // expectedObjectsViews.js
-window.expectedTealiumObjects = [
+window.expectedTealiumViewObjects = [
   {
     event: "TealiumView",
     currency: /^[A-Z]{3}$/, // e.g., GBP, EUR
