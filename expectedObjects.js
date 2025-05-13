@@ -35,6 +35,22 @@ window.expectedTealiumObjects = [
   "event": "TealiumLink"
 },
 {
+  "eventAction": "Expand",
+  "eventCategory": "Booking Magnet",
+  "eventLabel": /^(P|H|T)(:Expand)$/,
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},
+{
+  "eventAction": "Collapse",
+  "eventCategory": "Booking Magnet",
+  "eventLabel": /^(P|H|T)(:Collapse)$/,
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+},	
+{
   "eventAction": "Field Start",
   "eventLabel": "T:From",
   "eventCategory": "Booking Magnet",
