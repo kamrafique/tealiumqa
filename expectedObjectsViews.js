@@ -77,7 +77,7 @@ window.expectedTealiumViewObjects = [
 	app_name: "TravelExtras",
 	market: "uk",
 	language: "en",
-	currency: ["GBP", "EUR", "USD"],
+	currency: /^(GBP|EUR|USD)$/,
 	event: "TealiumView",
 	sFromCode: /^\d{7}$/,
 	sFromName: /^.+$/,
