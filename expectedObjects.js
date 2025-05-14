@@ -248,7 +248,18 @@ window.expectedTealiumLinkObjects = [
   product_cancellation_policy: ["none"],
   eventName: "InteractionEvent",
   event: "TealiumLink"
-},	
+},
+{
+eventCategory: "Insurance Selection",
+eventAction: "Selected Policy",
+eventLabel: /^(Comprehensive|Cancellation) insurance$/,
+insuranceProviders: "Allianz",
+insuranceType: /^(Comprehensive|Cancellation) insurance$/,
+insurancePrice: /^\d+(\.\d{2})?$/,
+basket_value: /^\d+(\.\d{2})?$/,
+eventName: "InteractionEvent",
+event: "TealiumLink"
+},
 {
 eventAction: "Login",
 currency: /^[A-Z]{3}$/,
