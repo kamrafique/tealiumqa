@@ -1,4 +1,4 @@
-[
+export const expectedTealiumViewObjects = [
   {
     event: "TealiumView",
     currency: /^[A-Z]{3}$/, // e.g., GBP, EUR
@@ -104,4 +104,4 @@
 	funnel_name: "Trains",
 	page_name: "TravelExtras"
 }
-]
+];
