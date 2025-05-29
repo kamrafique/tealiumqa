@@ -586,4 +586,4 @@ event: "TealiumLink"
         product_train_fare_type: [],
         page_name: "Checkout"
     }
-]
+];
