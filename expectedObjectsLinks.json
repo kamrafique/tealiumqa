@@ -1,4 +1,4 @@
-[
+export const expectedTealiumLinkObjects = [
 {
   "eventAction": "OnClick",
   "eventCategory": "HeaderLink",
