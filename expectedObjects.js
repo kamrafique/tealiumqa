@@ -202,8 +202,8 @@ window.expectedTealiumLinkObjects = [
   "priceSeniorOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
-}
-	{
+},
+{
   "eventAction": /^Select (Out|In)bound$/,
   "eventCategory": "Train Selection",
   "eventLabel": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
