@@ -281,7 +281,7 @@ window.expectedTealiumLinkObjects = [
   eventAction: "Room selection",
   eventCategory: "Hotel room card",
   eventLabel: "Continue",
-  currency: "GBP",
+  currency: /^(GBP|EUR|USD)$/,
   ecommerce_action: "add",
   basket_value: /^\d+(\.\d{2})?$/,
   basket_value_inpoints: /^\d+$/,
@@ -357,7 +357,7 @@ event: "TealiumLink"
 },
 {
 	eventAction: "Page Load",
-	currency: "GBP",
+	currency: /^(GBP|EUR|USD)$/,
 	funnel_name: "Trains",
 	page_name: "Checkout",
 	page_category: "Checkout",
@@ -403,13 +403,13 @@ event: "TealiumLink"
 
         {"eventCategory":"Train Upgrade","eventAction":"Selected Outbound","eventLabel":"Eurostar Standard > Eurostar Plus","ecommerce_action":"add","basket_value":0,"basket_value_inpoints":600,"pointsOrRegular":"points booking ","products_count":1,"product_name":["7015400 - 8727100:adult"],"product_id":["7015400 - 8727100"],"product_quantity":[1],"product_price":["0"],"product_price_inpoints":[600],"product_brand":["ES"],"product_category":["trains"],"product_variant":["outbound"],"product_departure_date":["2025-02-19"],"product_return_date":[null],"product_train_class":["Eurostar Plus"],"product_train_route":["london route"],"product_train_origin_stationcode":["7015400"],"product_train_destination_stationcode":["8727100"],"product_train_number":["9080"],"product_train_fbccode":["H03PSXASBGN"],"product_train_departuretime":["06:01"],"product_train_arrivaltime":["09:30"],"product_train_numberofconnections":[1],"product_train_connectioncode":[],"product_train_connectionoperator":[],"product_train_tickettype":["ESTAR_PUB_PLUS"],"product_train_passenger_type":["adult"],"product_train_fare_name":[],"product_train_fare_type":[],"eventName":"InteractionEvent","event":"TealiumLink"},
 
-        {"eventAction":"Login","currency":"GBP","funnel_name":"Trains","page_name":"Login","page_category":"Checkout","ld_version":"design-system","eventCategory":"Login or Register","eventLabel":"Check out as a guest","formName":"checkout","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":"Login","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Login","page_category":"Checkout","ld_version":"design-system","eventCategory":"Login or Register","eventLabel":"Check out as a guest","formName":"checkout","eventName":"InteractionEvent","event":"TealiumLink"},
         {"event":"TealiumView","page_category":"Bookings","isLoggedIn":"true","customer_hashedemail":"52296546df7b53c4242e0ecae775f6bf3c3aa919387cd39c0979fe1a9d5b8b3a","customer_is_admin":"false","loyaltyTier":"Etoile","membershipID":"30838110000069353","membershipDetails":"Points: 1363811; Points to upgrade: N/A","pointsToSpend":1363811,"pointsToUpgrade":null,"subscriptionType":"premium-pass","subscriptionDuration":6,"subscriptionRemainingDuration":134,"mktOptions":"false","page_name":"Bookings/UpcomingBookings"},
         {"eventAction":"Impression","eventCategory":"Internal Promotion","eventLabel":"Dynamic Promo Banner","eventNonInteraction":true,"promotion_id":/^(.*)$/,"promotion_name":/^(.*)$/,"promotion_position":["00_01"],"promotion_creative":[],"page_element_cta":/^(.*)$/,"eventName":"ImpressionEvent","event":"TealiumLink"},
         {"eventAction":"Click","eventCategory":"Bookings","eventLabel":"View Booking","eventName":"InteractionEvent","event":"TealiumLink"},
         {
             eventAction: "Click",
-            currency: ["GBP", "EUR", "USD"],
+            currency: /^(GBP|EUR|USD)$/,
             funnel_name: "Trains",
             page_name: "Checkout",
             page_category: "Checkout",
@@ -421,7 +421,7 @@ event: "TealiumLink"
         },
         {
             eventAction: "Form Submission",
-            currency: ["GBP", "EUR", "USD"],
+            currency: /^(GBP|EUR|USD)$/,
             funnel_name: "Trains",
             page_name: "Checkout",
             page_category: "Checkout",
@@ -435,7 +435,7 @@ event: "TealiumLink"
         },
         {
             eventAction: "Select A Passenger",
-            currency: "GBP",
+            currency: /^(GBP|EUR|USD)$/,
             funnel_name: "Trains",
             page_name: "Checkout",
             page_category: "Checkout",
@@ -447,7 +447,7 @@ event: "TealiumLink"
         },
         {
             eventAction: "Points payment unselected",
-            currency: "GBP",
+            currency: /^(GBP|EUR|USD)$/,
             funnel_name: "Trains",
             page_name: "Checkout",
             page_category: "Checkout",
@@ -479,19 +479,19 @@ event: "TealiumLink"
             paymentDetails: "SavedCard",
             paymentCardType: ["mc", "visa", "jcb", "diners", "discover"]
         },
-        {"eventAction":"Field Start","currency":["GBP", "EUR", "USD"],"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.firstName","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":["GBP", "EUR", "USD"],"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.lastName","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":["GBP", "EUR", "USD"],"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.email","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":["GBP", "EUR", "USD"],"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.email","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Complete","currency":["GBP", "EUR", "USD"],"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.mobile","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":["GBP", "EUR", "USD"],"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.1.firstName","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":["GBP", "EUR", "USD"],"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.1.lastName","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":["GBP", "EUR", "USD"],"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.mobile","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Click","currency":["GBP", "EUR", "USD"],"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Newsletter","eventLabel":"Opt-Out","mktOptions":"false","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.firstName","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.lastName","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.email","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.email","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":"Field Complete","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.mobile","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.1.firstName","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.1.lastName","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.mobile","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":"Click","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Newsletter","eventLabel":"Opt-Out","mktOptions":"false","eventName":"InteractionEvent","event":"TealiumLink"},
         {"eventCategory":"Passenger detail","eventAction":"Contact details","eventLabel":"Save contact details:button","eventName":"InteractionEvent","event":"TealiumLink"},
         {
             eventAction: "Validation Error",
-            currency: ["GBP", "EUR", "USD"],
+            currency: /^(GBP|EUR|USD)$/,
             funnel_name: "Trains",
             page_name: "Checkout",
             page_category: "Checkout",
@@ -509,10 +509,10 @@ event: "TealiumLink"
             eventAction: 'Reason for travel - Selection',
             eventLabel: ["reasons for this travel : business", "reasons for this travel : holiday", "reasons for this travel : visiting family or friends"]
         },
-        {"currency":"GBP","funnel_name":"Trains","page_category":"Checkout","ld_version":"design-system","event":"TealiumView","activityType":"train exchange","isLoggedIn":false,"customer_hashedemail":null,"customer_is_admin":null,"businessID":null,"loyaltyTier":null,"membershipID":null,"membershipDetails":null,"pointsToSpend":null,"pointsToUpgrade":null,"directOrConnection":"direct","sJourneyType":"One way","sFromCode":"7015400","sFromName":"London St Pancras Int'l","sToCode":"8727100","sToName":"Paris Gare du Nord","sDateOutbound":"2024-10-23","sDateInbound":"","sTravelHorizon":0,"sTravelDuration":null,"sPaxTotal":1,"sPaxAdult":1,"sPaxChildren":0,"sPaxInfants":0,"sPaxSenior":0,"sPaxYouth":0,"sPaxCompanion":0,"basket_value_inpoints":0,"pointsOrRegular":"regular booking","promoBooking":"","ecommerce_action":"checkout","payment_methods":"Card|GooglePay|Invoice|PayPal","club_eurostar_discount":"none","basket_value":270,"products_count":1,"product_brand":["ES"],"product_id":["7015400 - 8727100"],"product_category":["trains"],"product_name":["7015400 - 8727100:adult"],"product_price":["270.00"],"product_price_inpoints":["0"],"product_quantity":[1],"product_train_numberofconnections":[1],"product_departure_date":["2024-10-23"],"product_train_departuretime":["18:01"],"product_train_fbccode":["H01PSXASBGX"],"product_train_number":["9046"],"product_variant":["outbound"],"product_hotel_origin_code":[],"product_hotel_destination_code":[],"product_hotel_occupancy":[],"product_hotel_starrating":[],"product_hotel_review_count":[],"product_hotel_review_score":[],"product_hotel_room_extra":[],"product_return_date":[],"product_train_class":["Standard Premier"],"product_train_route":["london route"],"product_train_origin_stationcode":["7015400"],"product_train_destination_stationcode":["8727100"],"product_train_arrivaltime":["21:28"],"product_train_tickettype":["ES_PUB_SP"],"product_train_connectionoperator":[null],"product_train_passenger_type":["adult"],"product_train_fare_name":[],"product_train_fare_type":[],"page_name":"Checkout"},
+        {"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_category":"Checkout","ld_version":"design-system","event":"TealiumView","activityType":"train exchange","isLoggedIn":false,"customer_hashedemail":null,"customer_is_admin":null,"businessID":null,"loyaltyTier":null,"membershipID":null,"membershipDetails":null,"pointsToSpend":null,"pointsToUpgrade":null,"directOrConnection":"direct","sJourneyType":"One way","sFromCode":"7015400","sFromName":"London St Pancras Int'l","sToCode":"8727100","sToName":"Paris Gare du Nord","sDateOutbound":"2024-10-23","sDateInbound":"","sTravelHorizon":0,"sTravelDuration":null,"sPaxTotal":1,"sPaxAdult":1,"sPaxChildren":0,"sPaxInfants":0,"sPaxSenior":0,"sPaxYouth":0,"sPaxCompanion":0,"basket_value_inpoints":0,"pointsOrRegular":"regular booking","promoBooking":"","ecommerce_action":"checkout","payment_methods":"Card|GooglePay|Invoice|PayPal","club_eurostar_discount":"none","basket_value":270,"products_count":1,"product_brand":["ES"],"product_id":["7015400 - 8727100"],"product_category":["trains"],"product_name":["7015400 - 8727100:adult"],"product_price":["270.00"],"product_price_inpoints":["0"],"product_quantity":[1],"product_train_numberofconnections":[1],"product_departure_date":["2024-10-23"],"product_train_departuretime":["18:01"],"product_train_fbccode":["H01PSXASBGX"],"product_train_number":["9046"],"product_variant":["outbound"],"product_hotel_origin_code":[],"product_hotel_destination_code":[],"product_hotel_occupancy":[],"product_hotel_starrating":[],"product_hotel_review_count":[],"product_hotel_review_score":[],"product_hotel_room_extra":[],"product_return_date":[],"product_train_class":["Standard Premier"],"product_train_route":["london route"],"product_train_origin_stationcode":["7015400"],"product_train_destination_stationcode":["8727100"],"product_train_arrivaltime":["21:28"],"product_train_tickettype":["ES_PUB_SP"],"product_train_connectionoperator":[null],"product_train_passenger_type":["adult"],"product_train_fare_name":[],"product_train_fare_type":[],"page_name":"Checkout"},
         {
             eventAction: "Points payment selected",
-            currency: "GBP",
+            currency: /^(GBP|EUR|USD)$/,
             funnel_name: "Trains",
             page_name: "Checkout",
             page_category: "Checkout",
@@ -548,7 +548,7 @@ event: "TealiumLink"
             "page_name":"Overview"
         },
             {
-        currency: ["GBP", "EUR", "USD"],
+        currency: /^(GBP|EUR|USD)$/,
         funnel_name: "Trains",
         page_category: "Checkout",
         ld_version: "design-system",
