@@ -299,7 +299,7 @@ window.expectedTealiumLinkObjects = [
 },
 {
 eventCategory: "Insurance Selection",
-eventAction: "Selected Policy",
+eventAction: /^(Uns|S)elected Policy$/,
 eventLabel: /^(Comprehensive|Cancellation) insurance$/,
 insuranceProviders: "Allianz",
 insuranceType: /^(Comprehensive|Cancellation) insurance$/,
