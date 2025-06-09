@@ -5,7 +5,7 @@ window.expectedTealiumLinkObjects = [
   "eventCategory": "HeaderLink",
   "eventLabel": "TopMenu_Logo",
   "destinationUrl": "https://staging.eurostar.com/uk-en",
-  "eventName": "NavigationEvent_vx",
+  "eventName": /^NavigationEvent_v(\d{1})$/,
   "event": "TealiumLink"
 },
 {
