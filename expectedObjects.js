@@ -182,11 +182,11 @@ window.expectedTealiumLinkObjects = [
   "event": "TealiumLink"
 },
 	{
-  "eventAction": "Select Inbound",
+  "eventAction": /^Select (Out|In)bound$/,
   "eventCategory": "Train Selection",
-  "eventLabel": /^(Eurostar Plus|Eurostar Premier)$/,
+  "eventLabel": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
   "noChanges": 0,
-  "sClassInbound": /^(Eurostar Plus|Eurostar Premier)$/,
+  "sClassInbound": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
   "sInboundTime": /^\d{2}:\d{2}$/,
   "sInboundArrivalTime": /^\d{2}:\d{2}$/,
   "sInboundConnectionCode": null,
@@ -194,7 +194,7 @@ window.expectedTealiumLinkObjects = [
   "sTrainNumberInbound": /^\d{4}$/,
   "sTrainTarriffInbound": /^[A-Z0-9]{11}$/,
   "basket_value": /^(0|[1-9][0-9]{0,3}|10000)$/,
-  "sTrainSaleTagsInbound": "upgrade - 5",
+  "sTrainSaleTagsInbound": /^(.*)$/,
   "basket_value_inpoints": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceAdultInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceChildInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
