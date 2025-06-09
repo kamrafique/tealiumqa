@@ -1,4 +1,4 @@
-// expectedObjects.js
+// expectedObjects.js 
 window.expectedTealiumLinkObjects = [
 {
   "eventAction": "OnClick",
