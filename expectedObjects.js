@@ -160,7 +160,7 @@ window.expectedTealiumLinkObjects = [
   "event": "TealiumLink"
 },
 	{
-  "eventAction": /^Open (Out|In)bound Fare Details$/,
+  "eventAction": "Open Outbound Fare Details",
   "eventCategory": "Train Selection",
   "eventLabel": /^Eurostar (Standard|Plus|Premier)$/,
   "noChanges": 0,
@@ -181,6 +181,28 @@ window.expectedTealiumLinkObjects = [
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
+{
+  "eventAction": "Open Inbound Fare Details",
+  "eventCategory": "Train Selection",
+  "eventLabel": /^Eurostar (Standard|Plus|Premier)$/,
+  "noChanges": 0,
+  "sClassInbound": "Eurostar Standard",
+  "sInboundTime": /^\d{2}:\d{2}$/,
+  "sInboundArrivalTime": /^\d{2}:\d{2}$/,
+  "sInboundConnectionCode": null,
+  "sInboundConnectionOperator": null,
+  "sTrainNumberInbound": /^\d{4}$/,
+  "sTrainTarriffInbound": /^[A-Z0-9]{11}$/,
+  "basket_value": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "sTrainSaleTagsOutbound": /^.*$/,
+  "basket_value_inpoints": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceAdultOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceChildOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceYouthOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "priceSeniorOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
+}
 	{
   "eventAction": /^Select (Out|In)bound$/,
   "eventCategory": "Train Selection",
