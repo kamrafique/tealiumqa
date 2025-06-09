@@ -183,7 +183,7 @@ window.expectedTealiumLinkObjects = [
   "sTrainTypeInbound": /^ESTAR_PUB_(STD|PLUS|PREM)$/,
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
-},	
+},
 {
   "eventAction": "Open Outbound Fare Details",
   "eventCategory": "Train Selection",
