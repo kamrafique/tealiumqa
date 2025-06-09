@@ -143,7 +143,7 @@ window.expectedTealiumLinkObjects = [
   "eventCategory": "Train Selection",
   "eventLabel": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
   "noChanges": 0,
-  "sClassInbound": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
+  "sClassOutbound": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
   "sOutboundTime": /^\d{2}:\d{2}$/,
   "sOutboundArrivalTime": /^\d{2}:\d{2}$/,
   "sOutboundConnectionCode": null,
@@ -157,7 +157,7 @@ window.expectedTealiumLinkObjects = [
   "priceChildOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceYouthOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceSeniorOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
-  "sTrainTypeOutbound": "ESTAR_PUB_PLUS",
+  "sTrainTypeOutbound": /^ESTAR_PUB_(STD|PLUS|PREM))$/,
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
@@ -180,7 +180,7 @@ window.expectedTealiumLinkObjects = [
   "priceChildInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceYouthInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceSeniorInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
-  "sTrainTypeInbound": "ESTAR_PUB_PLUS",
+  "sTrainTypeInbound": /^ESTAR_PUB_(STD|PLUS|PREM))$/,
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },	
