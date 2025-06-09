@@ -228,7 +228,7 @@ window.expectedTealiumLinkObjects = [
   "priceSeniorOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
-},
+}, 
 {
   "eventAction": "Open Inbound Fare Details",
   "eventCategory": "Train Selection",
