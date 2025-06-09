@@ -157,7 +157,7 @@ window.expectedTealiumLinkObjects = [
   "priceChildOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceYouthOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceSeniorOutbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
-  "sTrainTypeOutbound": /^ESTAR_PUB_(STD|PLUS|PREM))$/,
+  "sTrainTypeOutbound": /^ESTAR_PUB_(STD|PLUS|PREM)$/,
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
@@ -180,7 +180,7 @@ window.expectedTealiumLinkObjects = [
   "priceChildInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceYouthInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
   "priceSeniorInbound": /^(0|[1-9][0-9]{0,3}|10000)$/,
-  "sTrainTypeInbound": /^ESTAR_PUB_(STD|PLUS|PREM))$/,
+  "sTrainTypeInbound": /^ESTAR_PUB_(STD|PLUS|PREM)$/,
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },	
