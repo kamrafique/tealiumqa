@@ -402,7 +402,21 @@ event: "TealiumLink"
 
 
         {"eventCategory":"Train Upgrade","eventAction":"Selected Outbound","eventLabel":"Eurostar Standard > Eurostar Plus","ecommerce_action":"add","basket_value":0,"basket_value_inpoints":600,"pointsOrRegular":"points booking ","products_count":1,"product_name":["7015400 - 8727100:adult"],"product_id":["7015400 - 8727100"],"product_quantity":[1],"product_price":["0"],"product_price_inpoints":[600],"product_brand":["ES"],"product_category":["trains"],"product_variant":["outbound"],"product_departure_date":["2025-02-19"],"product_return_date":[null],"product_train_class":["Eurostar Plus"],"product_train_route":["london route"],"product_train_origin_stationcode":["7015400"],"product_train_destination_stationcode":["8727100"],"product_train_number":["9080"],"product_train_fbccode":["H03PSXASBGN"],"product_train_departuretime":["06:01"],"product_train_arrivaltime":["09:30"],"product_train_numberofconnections":[1],"product_train_connectioncode":[],"product_train_connectionoperator":[],"product_train_tickettype":["ESTAR_PUB_PLUS"],"product_train_passenger_type":["adult"],"product_train_fare_name":[],"product_train_fare_type":[],"eventName":"InteractionEvent","event":"TealiumLink"},
-
+{
+	eventCategory: "Train Upgrade",
+	eventAction: "Unselected Outbound",
+	eventLabel: "Eurostar Standard > Eurostar Plus",
+	upgradeRoute: "outbound",
+	upgradeClass: /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
+	upgradePrice: /^\d+(\.\d{2})?$/,
+	sTrainNumberOutbound: /^ES:(\d{4})$/,
+	sOutboundTime: /^\d{2}:\d{2}$/,
+	sClassOutbound: /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
+	"sTrainTarriffOutbound": /^[A-Z0-9]{11}$/,
+	basket_value: /^\d+(\.\d{1,2})?$/,
+	eventName: "InteractionEvent",
+	event: "TealiumLink" 
+},
         {"eventAction":"Login","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Login","page_category":"Checkout","ld_version":"design-system","eventCategory":"Login or Register","eventLabel":"Check out as a guest","formName":"checkout","eventName":"InteractionEvent","event":"TealiumLink"},
         {"event":"TealiumView","page_category":"Bookings","isLoggedIn":"true","customer_hashedemail":"52296546df7b53c4242e0ecae775f6bf3c3aa919387cd39c0979fe1a9d5b8b3a","customer_is_admin":"false","loyaltyTier":"Etoile","membershipID":"30838110000069353","membershipDetails":"Points: 1363811; Points to upgrade: N/A","pointsToSpend":1363811,"pointsToUpgrade":null,"subscriptionType":"premium-pass","subscriptionDuration":6,"subscriptionRemainingDuration":134,"mktOptions":"false","page_name":"Bookings/UpcomingBookings"},
         {"eventAction":"Impression","eventCategory":"Internal Promotion","eventLabel":"Dynamic Promo Banner","eventNonInteraction":true,"promotion_id":/^(.*)$/,"promotion_name":/^(.*)$/,"promotion_position":["00_01"],"promotion_creative":[],"page_element_cta":/^(.*)$/,"eventName":"ImpressionEvent","event":"TealiumLink"},
