@@ -287,7 +287,7 @@ event: "TealiumLink"
   "event": "TealiumLink",
   "eventName": "InteractionEvent", 
   "eventCategory": "Side Basket",
-  "eventAction": /^Expand|Collapse/$
+  "eventAction": /^(Expand|Collapse)/$
 },
 {
 eventAction: "Login",
