@@ -138,7 +138,7 @@ window.expectedTealiumLinkObjects = [
   "event": "TealiumLink"
 },
 {
-  "eventAction": "Select Outbound",
+  "eventAction": /^Select (Out|In)bound$/,
   "eventCategory": "Train Selection",
   "eventLabel": /^(Eurostar Plus|Eurostar Premier)$/,
   "noChanges": 0,
@@ -350,29 +350,6 @@ event: "TealiumLink"
         {"event":"TealiumView","page_category":"Bookings","isLoggedIn":"true","customer_hashedemail":"52296546df7b53c4242e0ecae775f6bf3c3aa919387cd39c0979fe1a9d5b8b3a","customer_is_admin":"false","loyaltyTier":"Etoile","membershipID":"30838110000069353","membershipDetails":"Points: 1363811; Points to upgrade: N/A","pointsToSpend":1363811,"pointsToUpgrade":null,"subscriptionType":"premium-pass","subscriptionDuration":6,"subscriptionRemainingDuration":134,"mktOptions":"false","page_name":"Bookings/UpcomingBookings"},
         {"eventAction":"Impression","eventCategory":"Internal Promotion","eventLabel":"Dynamic Promo Banner","eventNonInteraction":true,"promotion_id":/^(.*)$/,"promotion_name":/^(.*)$/,"promotion_position":["00_01"],"promotion_creative":[],"page_element_cta":/^(.*)$/,"eventName":"ImpressionEvent","event":"TealiumLink"},
         {"eventAction":"Click","eventCategory":"Bookings","eventLabel":"View Booking","eventName":"InteractionEvent","event":"TealiumLink"},
-        {
-            eventAction: "Select Outbound",
-            eventCategory: "Train Selection",
-            eventLabel: "Eurostar Standard",
-            noChanges: 0,
-            sClassOutbound: "Eurostar Standard",
-            sOutboundTime: /^(.*):(.*)$/,
-            sOutboundArrivalTime: /^(.*):(.*)$/,
-            sOutboundConnectionCode: null,
-            sOutboundConnectionOperator: null,
-            sTrainNumberOutbound: /^.{1,4}$/,
-            sTrainTarriffOutbound: /^.{1,11}$/,
-            basket_value: 35,
-            sTrainSaleTagsOutbound: /^(.*)$/,
-            basket_value_inpoints: 0,
-            priceAdultOutbound: 35,
-            priceChildOutbound: 0,
-            priceYouthOutbound: 0,
-            priceSeniorOutbound: 0,
-            sTrainTypeOutbound: "ESTAR_PUB_STD",
-            eventName: "InteractionEvent",
-            event: "TealiumLink"
-        },
         {
             eventAction: "Click",
             currency: ["GBP", "EUR", "USD"],
