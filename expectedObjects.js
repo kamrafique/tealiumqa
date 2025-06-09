@@ -58,7 +58,7 @@ window.expectedTealiumLinkObjects = [
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
-	{
+{
   "eventAction": "Field Completion",
   "eventLabel": /^T:From_\d{7}$/,
   "eventCategory": "Booking Magnet",
@@ -73,7 +73,8 @@ window.expectedTealiumLinkObjects = [
   "interactionSection": "header",
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
-},{
+},
+{
   "eventAction": "Field Completion",
   "eventLabel": /^T:To_\d{7}$/,
   "eventCategory": "Booking Magnet",
@@ -105,7 +106,7 @@ window.expectedTealiumLinkObjects = [
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
-	{
+{
   "eventAction": "Field Start",
   "eventLabel": "T:Calendar|Inbound",
   "eventCategory": "Booking Magnet",
@@ -113,7 +114,7 @@ window.expectedTealiumLinkObjects = [
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
-	{
+{
   "eventAction": "Field Completion",
   "eventLabel": "T:Calendar|Inbound",
   "eventCategory": "Booking Magnet",
@@ -159,7 +160,7 @@ window.expectedTealiumLinkObjects = [
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
-	{
+{
   "eventAction": "Open Outbound Fare Details",
   "eventCategory": "Train Selection",
   "eventLabel": /^Eurostar (Standard|Plus|Premier)$/,
@@ -307,19 +308,22 @@ event: "TealiumLink"
   eventCategory: "Passenger Details",
   eventAction: "Select A Passenger",
   eventLabel: "Existing Passenger"
-},{
+},
+{
   event: "TealiumLink",
   eventName: "InteractionEvent",
   eventCategory: "Passenger Details",
   eventAction: "Select A Passenger",
   eventLabel: "New Passenger"
-},{
+},
+{
 	event: "TealiumLink",
 	eventName: "InteractionEvent",
 	eventCategory: "Passenger Details",
 	eventAction: "Click",
 	eventLabel: "Save New Passenger To Account:Check"
-},{
+},
+{
 	event: "TealiumLink",
 	eventName: "InteractionEvent",
 	eventCategory: "Passenger Details",
