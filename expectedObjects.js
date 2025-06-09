@@ -261,6 +261,12 @@ eventName: "InteractionEvent",
 event: "TealiumLink"
 },
 {
+  "event": "TealiumLink",
+  "eventName": "InteractionEvent", 
+  "eventCategory": "Side Basket",
+  "eventAction": /^Expand|Collapse/$
+},
+{
 eventAction: "Login",
 currency: /^[A-Z]{3}$/,
 funnel_name: "Train",
